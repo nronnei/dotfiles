@@ -1,0 +1,31 @@
+[init]
+	defaultBranchName = main
+	defaultBranch = main
+[user]
+	email = nronnei@gmail.com
+	name = Nick Ronnei
+[push]
+	default = simple
+[alias]
+	co = checkout
+	cl = clone
+	cp = cherry-pick
+	br = branch
+	ci = commit
+	st = status
+	p = pull
+	sl = stash list
+	sa = stash apply
+	ss = stash save
+	unstage = git restore --
+
+	ap = add -p
+	bn = !git rev-parse --abbrev-ref HEAD
+	pub = "!git push --set-upstream origin \"$(git bn)\""
+	sync = pull --rebase
+	last = log -1 HEAD
+	lu = log -u
+	lds = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short
+	ld = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=relative
+[pull]
+	rebase = false
