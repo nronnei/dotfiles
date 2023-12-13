@@ -1,0 +1,5 @@
+*.swp
+ scripts/music/current_music.app/Contents/
+*.pyc
+__pycache__
+.DS_Store
