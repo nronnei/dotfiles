@@ -1,3 +1,3 @@
 #!/bin/bash
 
-echo "$(python3 ~/.tmux/scripts/battery/get_batt_status_universal.py)"
+echo "$(python3 ~/dotfiles/.tmux/scripts/battery/get_batt_status_universal.py)"

@@ -10,5 +10,5 @@ if [[ "$os" == Linux ]]; then
     fi
 else
     # TODO look for OS X
-    echo $(osascript ~/.tmux/scripts/music/current_music.app)
+    echo $(osascript ~/dotfiles/.tmux/scripts/music/current_music.app)
 fi
