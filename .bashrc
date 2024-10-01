@@ -128,8 +128,7 @@ if ! shopt -oq posix; then
 fi
 
 # Enable asdf and its autocompletions in bash
-. $HOME/.asdf/asdf.sh
-. $HOME/.asdf/completions/asdf.bash
+eval "$(/home/nronnei/.local/bin/mise activate bash)"
 
 # Enable kubectl autocompletion and make it work w/ alias
 source <(kc completion bash)
